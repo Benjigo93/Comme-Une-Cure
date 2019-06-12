@@ -1,0 +1,150 @@
+/****************************************************/
+/*************   AUTRES SERVICES   *****************/
+/**************************************************/
+
+
+/****************************************************/
+/****************    HEADER    *********************/
+
+#menu ul li:nth-child(3) a{
+    color: #ffffff;
+}
+
+#menu ul li:hover a{
+    color:#74CE8B;
+}
+
+#menu ul li:nth-child(4) a {
+    color: #74CE8B;
+}
+
+
+/****************************************************/
+/****************    BODY    ***********************/
+
+.service{
+    margin-bottom: 15vh;
+}
+
+.service>div{
+    display: inline-block;
+    width: 25%;
+    margin: 10vh 12.4% 0 12.4%;
+    text-align: center;
+    color: #74CE8B;
+    font-size: 3vw;
+    background: url('../images/bgDiv1.jpg');
+    background-size: 100%;
+    background-position: 50%;
+    padding: 3.5vh 0;
+    border: 0.3vw solid rgba(116, 206, 139, 0.603);
+    border-radius: 20%;
+    transition: background 1.5s ease;
+    will-change: background;
+}
+
+.service>div:hover{
+    background-size: 150%;
+    background-position: 50%;
+}
+
+.service span{
+    display: block;
+}
+
+.gallerie1{
+    text-align: center;
+    font-size: 0;
+    display: none;
+}
+
+.gallerie1 img{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}
+
+.gallerie1 img:nth-child(-n+10){
+    width: 20%;
+}
+
+.gallerie1 img:nth-child(n+11){
+    width: 25%;
+}
+
+.gallerie1 img, .gallerie2 img{
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+}
+
+.gallerie1 img:hover{
+    transform: scale(1.4);
+}
+
+.gallerie2 img:hover{
+    transform: scale(1.4);
+}
+
+.gallerie2 img:nth-child(n+16):nth-child(-n+22):hover{
+    transform: scale(1.2);
+}
+
+.gallerie2 img:nth-child(n+23):hover{
+    transform: scale(1.125);
+}
+
+
+.gallerie2{
+    text-align: center;
+    font-size: 0;
+    display: none;
+}
+
+.gallerie2 img{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}
+
+.gallerie2 img:nth-child(-n+15){
+    width: 20%;
+}
+
+.gallerie2 img:nth-child(n+16):nth-child(-n+19){
+    width: 25%;
+}
+
+.gallerie2 img:nth-child(n+20){
+    width: 33.33%;
+}
+
+
+/****************************************************/
+/****************    RESPONSIVE    *****************/
+
+
+@media screen and (max-width: 1370px){
+
+    .formules>h5, .service>h5 {
+    margin-top: 3vh;
+    }
+
+    .service{
+        margin-bottom: 4vh;
+    }
+
+    .service>div{
+        margin: 2vh 12.4% 0 12.3%;
+        padding: 1.5vh 0;
+    }
+}
+
+@media screen and (max-width: 780px){
+    
+    .service>div{
+        margin-top: 0.8vh;
+        padding: 1vh 0;
+    }
+}

@@ -1,0 +1,523 @@
+/****************************************************/
+/****************   PARTENAIRES  *******************/
+/**************************************************/
+
+
+/****************************************************/
+/****************    HEADER    *********************/
+
+.partenaireTitle {
+    top: 0;
+    z-index: -1;
+    margin-top: -17vh;
+}
+
+.partenaireTitle img{
+    width: 100%;
+}
+
+.partenaireTitle h5{
+    bottom: 50%;
+}
+
+#menu ul li:nth-child(2) a{
+    color: #ffffff;
+}
+
+#menu ul li:hover a{
+    color:#74CE8B;
+}
+
+#menu ul li:nth-child(5) a{
+    color: #74CE8B;
+}
+
+/****************************************************/
+/****************    BODY    ***********************/
+
+.mainContent{
+    margin: 0;
+    z-index: 0;
+    font-size: 1.3vw;
+    position: relative;
+}
+
+.mainContent .listePartenaires{
+    background-image: url('../images/bgParcours1.png');
+    background-size: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.listePartenaires{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.mainContent .etapes{
+    margin: 0 1%;
+    color: #000000;
+}
+
+.mainContent .etapes li{
+    display: inline-block;
+    width: 22.5%;
+    margin: 0 1%;
+    cursor: pointer;
+    height: 30vh;
+}
+
+.mainContent .etapes span{
+    display: block;
+    font-weight: 800;
+    font-size: 1.3vw;
+    opacity: 0.6;
+    will-change: opacity ;
+    transition: opacity 1s ease;
+}
+
+.mainContent .etape1:hover span{
+    opacity: 1;
+}
+
+.mainContent .etape2:hover span{
+    opacity: 1;
+}
+
+.mainContent .etape3:hover span{
+    opacity: 1;
+}
+
+.mainContent .etape4:hover span{
+    opacity: 1;
+}
+
+.mainContent .etapes li span:first-child{
+    font-size: 1.8vw;
+    padding-top: 7%;
+}
+
+.mainContent .etapes li span:nth-child(3){
+    font-size: 0.9vw;
+    padding-top: 10%;
+    color: #3EB15B;
+}
+
+.mainContent .etapes li i{
+    color: #3EB15B;
+    font-size: 3vw;
+}
+
+.mainContent .etapes li:hover, .page-load-hover{
+    border: 0.5vh solid #74CE8B !important;
+    box-shadow: inset 0px -0.4vh 0px #74CE8B;
+}
+
+.mainContent .etapes li.etape1{
+    background: url('../images/parte1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 50%;
+    border-radius: 7vw;
+    border: 0.5vh solid rgba(116, 206, 139, 0);
+    display: none;
+}
+
+.mainContent .etape2{
+    background: url('../images/parte2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 50%;
+    border-radius: 7vw;
+    border: 0.5vh solid rgba(116, 206, 139, 0);
+}
+
+.mainContent .etape3{
+    background: url('../images/parte3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 50%;
+    border-radius: 7vw;
+    border: 0.5vh solid rgba(116, 206, 139, 0);
+}
+
+.mainContent .etape4{
+    background: url('../images/parte4.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 50%;
+    border-radius: 7vw;
+    border: 0.5vh solid rgba(116, 206, 139, 0);
+}
+
+.detailPartenaire{
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+.detail1{
+    margin: 10vh 10% 3% 10%;
+    background-color: rgba(116, 206, 139, 0.438);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: left;
+    display: none;
+    border-radius: 25px;
+}
+
+.detail1>div:first-of-type{
+    display: inline-block;
+    background: url('../images/parteBis1.jpg');
+    width: 23%;
+    height: 25vh;
+    border-radius: 10px 30%;
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-position-y: 50%;
+    background-position-x: 15%;
+    border: 0.5vh solid rgba(116, 206, 139, 0.651);
+    margin-left: 2vw;
+}
+
+.detail1>div:nth-of-type(2){
+    display: inline-block;
+    text-align: center;
+    width: 74%;
+    vertical-align: top;
+}
+
+.detail1 span{
+    display: block;
+    font-weight: 800;
+}
+
+.detail1 div:nth-child(2) span:first-of-type{
+    display: block;
+    font-size: 2.1vw;
+}
+
+.detail1 div:last-of-type{
+    display: inline-block;
+}
+
+.detail1 div p{
+    width: 72%;
+    margin-left: 26%;
+    margin-top: -12vh;
+    text-align: center;
+}
+
+.detail1 div p span{
+    display: inline-block;
+}
+
+.detail1 div p span:last-of-type{
+    display: block;
+}
+
+.detail2{
+    margin: 10vh 10% 3% 10%;
+    background-color: rgba(116, 206, 139, 0.438);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: left;
+    display: none;
+    border-radius: 25px;
+}
+
+.detail2>div:first-of-type{
+    display: inline-block;
+    background: url('../images/parteBis2.png');
+    width: 23%;
+    height: 25vh;
+    border-radius: 10px 30%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 50%;
+    background-position-x: 100%;
+    border: 0.5vh solid rgba(116, 206, 139, 0.651);
+    margin-left: 2vw;
+}
+
+.detail2>div:nth-of-type(2){
+    display: inline-block;
+    text-align: center;
+    width: 74%;
+    vertical-align: top;
+}
+
+.detail2 span{
+    display: block;
+    font-weight: 800;
+}
+
+.detail2 div:nth-child(2) span:first-of-type{
+    display: block;
+    font-size: 2.1vw;
+}
+
+.detail2 div:last-of-type{
+    display: inline-block;
+}
+
+.detail2 div p{
+    width: 72%;
+    margin-left: 26%;
+    margin-top: -12vh;
+    text-align: center;
+}
+
+.detail2 div p span{
+    display: inline-block;
+}
+
+.detail2 div p span:last-of-type{
+    display: block;
+    margin-top: 1vh;
+}
+
+.detail1 a, .detail2 a, .detail3 a, .detail4 a{
+    color: #000000;
+    text-shadow: -1px 0 #7DBA55, 0 1px #7DBA55, 1px 0 #7DBA55, 0 -1px #7DBA55;
+}
+
+.detail3{
+    margin: 10vh 10% 3% 10%;
+    background-color: rgba(116, 206, 139, 0.438);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: left;
+    display: none;
+    border-radius: 25px;
+}
+
+.detail3>div:first-of-type{
+    display: inline-block;
+    background: url('../images/parteBis3.png');
+    width: 23%;
+    height: 25vh;
+    border-radius: 10px 30%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 70%;
+    background-position-x: 100%;
+    border: 0.5vh solid rgba(116, 206, 139, 0.651);
+    margin-left: 2vw;
+}
+
+.detail3>div:nth-of-type(2){
+    display: inline-block;
+    text-align: center;
+    width: 74%;
+    vertical-align: top;
+}
+
+.detail3 span{
+    display: block;
+    font-weight: 800;
+}
+
+.detail3 div:nth-child(2) span:first-of-type{
+    display: block;
+    font-size: 2.1vw;
+}
+
+.detail3 div:last-of-type{
+    display: inline-block;
+}
+
+.detail3 div p{
+    width: 72%;
+    margin-left: 26%;
+    margin-top: -12vh;
+    text-align: center;
+}
+
+.detail3 div p span{
+    display: inline-block;
+}
+
+.detail3 div p span:last-of-type{
+    display: block;
+    margin-top: 1vh;
+}
+
+.detail4{
+    margin: 10vh 10% 3% 10%;
+    background-color: rgba(116, 206, 139, 0.438);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: left;
+    display: none;
+    border-radius: 25px;
+}
+
+.detail4>div:first-of-type{
+    display: inline-block;
+    background: url('../images/parteBis4.png');
+    width: 23%;
+    height: 25vh;
+    border-radius: 10px 30%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 50%;
+    background-position-x: 100%;
+    border: 0.5vh solid rgba(116, 206, 139, 0.651);
+    margin-left: 2vw;
+}
+
+.detail4>div:nth-of-type(2){
+    display: inline-block;
+    text-align: center;
+    width: 74%;
+    vertical-align: top;
+}
+
+.detail4 span{
+    display: block;
+    font-weight: 800;
+}
+
+.detail4 div:nth-child(2) span:first-of-type{
+    display: block;
+    font-size: 2.1vw;
+}
+
+.detail4 div:last-of-type{
+    display: inline-block;
+}
+
+.detail4 div p{
+    width: 72%;
+    margin-left: 26%;
+    margin-top: -12vh;
+    text-align: center;
+}
+
+.detail4 div p span{
+    display: block;
+    margin-top: 1vh;
+}
+
+/****************************************************/
+/****************    RESPONSIVE    *****************/
+
+@media screen and (max-width: 1370px){
+    
+    .header{
+        margin-bottom: 0;
+    }
+    
+    .partenaireTitle {
+        position: relative;
+        top: 0;
+        z-index: -1;
+        margin-top: 0vh;
+    }
+
+    .partenaireTitle h5{
+        font-size: 5vw;
+    }
+
+    .listePartenaires{
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    .mainContent .etapes li{
+        height: 8vh;
+    }
+
+    .mainContent .etapes li span:nth-child(3){
+        font-size: 1.1vw;
+        padding-top: 5%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+
+    .detail1 {
+        margin: 5vh 10% 3% 10%;
+        padding-top: 2vh;
+    }
+
+    .detail1>div:first-of-type{
+        height: 9vh;
+    }
+
+    .detail1 div p{
+        margin-top: -4vh;
+    }
+
+    .detail2 {
+        margin: 5vh 10% 3% 10%;
+        padding-top: 2vh;
+    }
+
+    .detail2>div:first-of-type{
+        height: 9vh;
+    }
+
+    .detail2 div p{
+        margin-top: -4vh;
+    }
+
+    .detail3 {
+        margin: 5vh 10% 3% 10%;
+        padding-top: 2vh;
+    }
+
+    .detail3>div:first-of-type{
+        height: 9vh;
+    }
+
+    .detail3 div p{
+        margin-top: -4vh;
+    }
+
+    .detail4 {
+        margin: 5vh 10% 3% 10%;
+        padding-top: 2vh;
+    }
+
+    .detail4>div:first-of-type{
+        height: 9vh;
+    }
+
+    .detail4 div p{
+        margin-top: -4vh;
+    }
+
+}
+
+@media screen and (max-width: 570px){
+
+    .partenaireTitle{
+        margin-top: 0;
+    }
+
+    .mainContent .etapes li:hover, .page-load-hover {
+        border: 0.5vh solid #74CE8B!important;
+        box-shadow: inset 0px -0.4vh 0px #74CE8B;
+    }
+
+    .detail1>div:first-of-type{
+        height: 9vh;
+    }
+
+    .detail2>div:first-of-type{
+        height: 9vh;
+    }
+
+    .detail3>div:first-of-type{
+        height: 9vh;
+    }
+
+    .detail4>div:first-of-type{
+        height: 9vh;
+    }
+
+    .buttonUp {
+        margin-bottom: 30%;
+    }
+}

@@ -1,0 +1,336 @@
+/****************************************************/
+/****************    CONCEPT    ********************/
+/**************************************************/
+
+
+/****************************************************/
+/****************    HEADER    *********************/
+
+.conceptTitle {
+    top: 0;
+    z-index: -1;
+    margin-top: -17vh;
+}
+
+.conceptTitle img{
+    width: 100%;
+}
+
+#menu ul li:first-child a{
+    color: #ffffff;
+}
+
+#menu ul li:hover a{
+    color:#74CE8B;
+}
+
+#menu ul li:nth-child(2) a{
+    color: #74CE8B;
+}
+
+
+/****************************************************/
+/****************    BODY    ***********************/
+
+.mainContent{
+    margin: 0;
+    z-index: 0;
+    font-size: 1.3vw;
+    position: relative;
+}
+
+.mainContent .listeConcept{
+    background-image: url('../images/bgParcours1.png');
+    background-size: 100%;
+    width: 100%;
+    text-align: center;
+    height: 7.5em;
+}
+
+.mainContent .etapes{
+    margin: 0 5%;
+    color: #74CE8B;
+}
+
+.mainContent .etapes ul{
+    margin: 0;
+    padding: 0;
+}
+
+.mainContent .etapes li{
+    display: inline-block;
+    width: 17.5%;
+    margin: 0 1%;
+    cursor: pointer;
+    border-bottom: 1vh solid rgba(116, 206, 139, 0);
+}
+
+.mainContent .etapes span{
+    display: table-cell;
+}
+
+.mainContent .etapes .numb{
+    font-size: 6vw;
+    font-weight: 800; 
+    vertical-align: middle;
+    opacity: 0.55;
+    transition: opacity 0.5s ease-out;
+    will-change: opacity;
+}
+
+.mainContent .etapes .subNumb{
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 2%;
+    font-size: 1.3vw;
+    font-weight: 800; 
+}
+
+.mainContent .etapes li:hover{
+    box-shadow:inset 0px -1vh 0px #74CE8B;
+}
+
+.mainContent .etapes li:hover .numb{
+    opacity: 1;
+}
+
+.detailConcept{
+    text-align: center;
+}
+
+.detailConcept .sousDetail1, .detailConcept .sousDetail2,.detailConcept .sousDetail3, .detailConcept .sousDetail4,.detailConcept .sousDetail5{
+    background-color: rgba(116, 206, 139, 0.55);
+    border-radius: 10px;
+    width: 80%;
+    margin: 4% 10%;
+}
+
+.detailConcept .sousDetail1 h5, .detailConcept .sousDetail2 h5,.detailConcept .sousDetail3 h5, .detailConcept .sousDetail4 h5,.detailConcept .sousDetail5 h5{
+    font-size: 1.6vw;
+    font-weight: 700;
+    padding-top: 2%;
+}
+
+.detailConcept .sousDetail1>span, .detailConcept .sousDetail2>span,.detailConcept .sousDetail3>span, .detailConcept .sousDetail4>span,.detailConcept .sousDetail5>span{
+    display: block;
+}
+
+.detailConcept .sousDetail1 span:nth-child(2){
+    padding-top: 4%;
+}
+
+.detailConcept .sousDetail1 span:nth-child(3){
+    padding-bottom: 5%;
+}
+
+.gras{
+    font-weight: 700;
+}
+
+.green{
+    font-weight: 800;
+    color: #74CE8B;
+}
+
+.sousDetail1, .sousDetail2, .sousDetail3, .sousDetail4, .sousDetail5{
+    margin: 0 5%;
+    display: none;
+}
+
+.detail1>span{
+    display: block;
+    margin: 2% 0;
+}
+
+.detail1>span:nth-child(n+8){
+    font-weight: 800;
+}
+
+.detail1>span:nth-child(13){
+    margin-bottom: 4%;
+}
+
+
+.detailOpen{
+    display: block !important;
+    animation: slide-down 0.8s ease-out;
+}
+
+@keyframes slide-down {
+    0% { opacity: 0; -webkit-transform: translateX(50%); }   
+    100% { opacity: 1; -webkit-transform: translateX(0); }
+}
+
+.buttonUp{
+    position: relative;
+    margin-bottom: 2%;
+}
+
+.detail1 .sousDetail2 span:first-of-type{
+    padding-top: 3vh;
+}
+
+.detail1 .sousDetail2 span:last-child{
+    padding-bottom: 8vh;
+}
+
+.detail1 .sousDetail3 span:last-child{
+    padding-top: 3vh;
+    padding-bottom: 6vh;
+}
+
+.detail1 .sousDetail4 span:first-of-type{
+    padding-top: 4vh;
+}
+
+.detail1 .sousDetail4 span:last-child{
+    padding-bottom: 6vh;
+}
+
+.detail1 .sousDetail5 span:first-of-type{
+    padding-top: 4vh;
+}
+
+.detail1 .sousDetail5 span:last-child{
+    padding-bottom: 6vh;
+}
+
+.conceptVideo{
+    margin-bottom: 4vh;
+    position: relative;
+}
+
+.conceptVideo video{
+    width: 70%;
+    margin: 0 15%;
+    object-fit: fill;
+}
+
+.playpause {
+    background-image:url('../images/play_pause_resume.png');
+    background-repeat:no-repeat;
+    width:15%;
+    height:35%;
+    position:absolute;
+    left:0%;
+    right:0%;
+    top:0%;
+    bottom:0%;
+    margin:auto;
+    background-size:contain;
+    background-position: center;
+    border-radius: 50%;
+    border: 0.8vw solid #74CE8B;
+    cursor: pointer;
+}
+
+.detail1>a, .detail1>a span{
+    display: inline-block;
+    left: 0;
+    cursor: pointer;
+}
+
+.detail1>a:first-of-type{
+    margin-right: 30%;
+}
+
+
+/****************************************************/
+/****************    RESPONSIVE    *****************/
+
+
+@media screen and (max-width: 1370px){
+    
+    .header{
+        margin-bottom: 0;
+    }
+    
+    .conceptTitle {
+        position: relative;
+        top: 0;
+        z-index: -1;
+        margin-top: 0vh;
+    }
+
+    .conceptTitle h5{
+        font-size: 5vw;
+    }
+
+    #hamburger h4{
+        top: 53%;
+    }
+
+    .mainContent .etapes li:hover{
+        box-shadow:inset 0px -0.5vh 0px #74CE8B;
+    }
+}
+
+
+@media screen and (max-width: 920px) {
+    
+    .mainContent .etapes li:hover{
+        box-shadow:inset 0px -0.4vh 0px #74CE8B;
+    }
+
+    .mainContent{
+        margin: 0;
+        z-index: 0;
+        font-size: 2vw;
+        position: relative;
+    }
+
+    .mainContent .listeConcept{
+        height: 5em;
+    }
+
+    .detailConcept  .sousDetail1 h5, .detailConcept  .sousDetail2 h5, .detailConcept  .sousDetail3 h5, .detailConcept  .sousDetail4 h5, .detailConcept  .sousDetail5 h5{
+        font-size: 2.5vw;
+}
+
+@media screen and (max-width: 570px){
+    
+    .conceptTitle{
+        margin-top: 0;
+    }
+    
+    .detail1>span {
+        margin: 2% 2%;
+    }
+
+    .detail1 .sousDetail2 span:first-child{
+        padding-top: 2.5vh;
+    }
+    
+    .detail1 .sousDetail2 span:last-child{
+        padding-bottom: 2.5vh;
+    }
+
+    .detail1 .sousDetail3 span:last-child{
+        padding-bottom: 3vh;
+    }
+
+    .detail1 .sousDetail2 span:first-of-type{
+        padding-top: 1vh;
+    }
+
+    .detail1 .sousDetail3 span:last-child{
+        padding-top: 1vh;
+        padding-bottom: 2vh;
+    }
+        
+    .detail1 .sousDetail4 span:first-of-type{
+        padding-top: 1.5vh;
+    }
+    
+    .detail1 .sousDetail4 span:last-child{
+        padding-bottom: 2vh;
+    }
+
+    .detail1 .sousDetail5 span:first-of-type{
+        padding-top: 1.5vh;
+    }
+    
+    .detail1 .sousDetail5 span:last-child{
+        padding-bottom: 2vh;
+    }
+}
